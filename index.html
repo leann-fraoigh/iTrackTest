@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iTrack test</title>
+</head>
+
+<style>
+  .range {
+    position: relative;
+    width: 300px;
+    padding: 8px;
+    box-sizing: border-box;
+
+    font-size: 18px;
+    line-height: 20px;
+    font-family: "Arial",sans-serif;
+    text-align: center;
+    border: 2px solid #cecece;
+    border-radius: 4px;
+  }
+
+  input[type=range] {
+    position: absolute;
+    bottom: -7px;
+    left: 2px;
+    -webkit-appearance: none;
+    width: calc(100% - 4px);
+    height: 2px;
+    margin: 5px 0;
+    border: none;
+  }
+
+  input[type=range]:focus {
+    outline: none;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    width: calc(100% - 4px);
+    height: 2px;
+    border: none;
+    cursor: pointer;
+    background: #F68923;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 4px 2px #CECECE;
+    height: 14px;
+    width: 14px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    background: #F68923;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6px;
+  }
+
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #F68943;
+  }
+
+  input[type=range]::-moz-range-track {
+    width: calc(100% - 4px);
+    height: 2px;
+    border: none;
+    cursor: pointer;
+    background: #CECECE;
+  }
+
+  input[type="range"]::-moz-range-progress {
+    background-color: #F68923; 
+  }
+
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 8px 4px #CECECE;
+    height: 14px;
+    width: 14px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    background: #F68923;
+    cursor: pointer;
+  }
+
+  input[type=range]::-ms-track {
+    width: calc(100% - 4px);
+    height: 2px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    color: transparent;
+  }
+
+  input[type=range]::-ms-fill-lower {
+    background: #F68923;
+    border-radius: 2.6px;
+  }
+
+  input[type=range]::-ms-fill-upper {
+    background: #CECECE;
+    border-radius: 2.6px;
+  }
+
+  input[type=range]::-ms-thumb {
+    box-shadow: 0px 0px 8px 4px #CECECE;
+    height: 14px;
+    width: 14px;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    background: #F68923;
+    cursor: pointer;
+  }
+
+  input[type=range]:focus::-ms-fill-lower {
+    background: #F68953;
+  }
+  
+  input[type=range]:focus::-ms-fill-upper {
+    background: #CECECE;
+  }
+
+</style>
+
+<body>
+  <h1>iTrack test</h1>
+
+  <h2>Task 5</h2>
+  <div class="range">
+    <span class="range__output">500</span>
+    <input type="range" id="range" name="range" min="0" max="1000" value="500">
+  </div>
+  
+  <script src="script.js"></script>
+  
+</body>
+</html>
