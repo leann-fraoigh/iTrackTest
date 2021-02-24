@@ -96,7 +96,6 @@ window.addEventListener('locationchange', function () {
   updateParams();
 });
 
-console.log(updateParams());
 console.log(updateParams('https://itrack.ru/portfolio/website/filter/project_type-is-korporativnyy_sayt/apply/'));
 
 
